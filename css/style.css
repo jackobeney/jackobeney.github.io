@@ -2,57 +2,6 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
-header {
-	background-color: #fff;
-	position: fixed;
-	height: 75px;
-	-webkit-box-shadow: 0 1px 2px -1px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0 1px 2px -1px rgba(0,0,0,0.5);
-	box-shadow: 0 1px 2px -1px rgba(0,0,0,0.5);
-	width: 100%;
-	z-index: 1;
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  margin-left: -1.2em;
-  bottom: -1.96em;
-  left: 50%;
-  box-sizing: border-box;
-  border: 1em solid black;
-  border-color: transparent transparent #fff #fff;
-  transform-origin: 0 0;
-  transform: rotate(-45deg);
-  -webkit-box-shadow: -1px 1px 2px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -1px 1px 2px -1px rgba(0, 0, 0, 0.5);
-  box-shadow: -1px 1px 2px -1px rgba(0, 0, 0, 0.5);
-}
-
-nav {
-	position: absolute;
-	top: 42%;
-	left: 30px;
-	right: 0;
-	text-align: center;
-	font-size: 1.2em;
-}
-
-nav a {
-	padding: 0 80px 0 20px;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-a:active {
-	text-decoration: none;
-	color: #337ab7;
-}
-
 .header {
 	background-image: url('../assets/background-image-min.jpg');
 	background-size: 110%;
@@ -74,19 +23,6 @@ a:active {
 	font-size: 4em;
 	font-weight: 400;
 }
-
-/*.header h3 {
-	position: absolute;
-	top: 320px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	color: #fff;
-	font-size: 2em;
-	font-family: 'Georgia', serif;
-	font-weight: 300;
-	font-style: italic;
-}*/
 
 .content {
 	color: #444;
@@ -181,34 +117,6 @@ a:active {
 }
 
 @media only screen and (min-device-width : 300px) and (max-device-width : 768px) {
-
-	header {
-		background-color: #fff;
-		position: fixed;
-		margin-top: 0;
-		height: 50px;
-		-webkit-box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.5);
-		-moz-box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.5);
-		box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.5);
-		width: 100%;
-	}
-
-	header:after {
-		display: none;
-	}
-
-	nav {
-		position: absolute;
-		left: 0;
-		right: 0;
-		text-align: center;
-		font-size: 0.8em;
-	}
-
-	nav a {
-		padding: 10px;
-	}
-
 	.header {
 		background-size: 150%;
 		background-position: 46% 50%;
@@ -225,22 +133,14 @@ a:active {
 		top: 160px;
 	}
 
-	.mobile-menu {
-		position: absolute;
-		top: 0;
-		height: 50px;
-		width: 100%
+	.content h1 {
+		font-size: 2.6em;
+		line-height: 2.6em;
 	}
 
-	.mobile-menu h4 {
-		position: absolute;
-		top: 30px;
-		left: 0;
-		right: 0;
-		text-align: center;
-		color: #fff;
-		font-size: 1em;
-		font-weight: 400;
+	.content p {
+		font-size: 1.3em;
+		line-height: 1.3em;
 	}
 
 	.my-face {
