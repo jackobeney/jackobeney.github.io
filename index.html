@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jack Obeney</title>
+    <meta name="description" content="Personal site">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/jquery.smint.js"></script>
+    <script type="text/javascript">
+      $(document).ready( function() {
+          $('.subMenu').smint({
+            'scrollSpeed' : 500
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+  	<header class="subMenu hidden-xs">
+	  	<nav class="inner">
+        <a class="subNavBtn" href="#s1">About Me</a>
+        <a class="subNavBtn" href="#s2">Contact</a>
+    	</nav>
+  	</header>
+
+  	<div class="header">
+	  	<h1>JACK OBENEY</h1>
+  	</div>
+
+    <div class="content container-fluid">
+
+      <div class="me row s1">
+
+        <div class="my-face col-xs-12 col-md-4">
+          <img class="img-circle" src="assets/me-min.jpg">
+          <p><a href="https://twitter.com/JackObeney">@jackobeney</a></p>
+          <p>Canterbury, UK</p>
+        </div>
+
+        <div class="col-xs-12 col-md-8">
+          <h1>About Me</h1>
+          <p>
+          Currently studying computer science at the University of Kent. I have a passion for web development and experience with technologies such as Node, Angular, Backbone, Meteor, Ionic, and MongoDB, to name just a few.
+          </p>
+
+          <p>Check me out on Github: <a href="http://github.com/jackobeney">jackobeney</a></p>
+        </div>
+
+      </div>
+
+      <div class="contact row s4">
+
+        <div class="col-sm-8">
+          <h1>Contact</h1>
+          <form method="post" action="https://formkeep.com/f/e1ff09daff19">
+            <div class="form-group">
+              <label>name</label>
+              <input class="form-control" name="name" type="text">
+            </div>
+            <div class="form-group">
+              <label>e-mail</label>
+              <input class="form-control" name="email" type="email">
+            </div>
+            <div class="form-group">
+              <label>message</label>
+              <textarea class="form-control" name="message" rows="4"></textarea>
+            </div>
+            <button href="#" id="submit" name="submit" type="submit" class="btn btn-default">Send</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer row">
+        <hr/>
+        <div class="col-xs-6">
+          <small>&#169; 2015 Jack Obeney</small>
+        </div>
+        <div class="col-xs-6 social-icons">
+          <a href="https://twitter.com/JackObeney"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="https://www.linkedin.com/profile/view?id=295746696"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
